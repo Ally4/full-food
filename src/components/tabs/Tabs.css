@@ -1,0 +1,213 @@
+/* .makeStyles-root-1 {
+    width: 60% !important;
+    background-color: transparent !important;
+    margin-left: -200px !important;
+    padding: 0px 80px 0px 80px !important;
+  }  */
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabstitles {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #3c4858;
+    font-weight: bold;
+    margin: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.tabstitle--1 {
+    padding: 10px 20px;
+    border-radius: 35px;
+    margin: 10px 5px 10px 5px;
+    transition: all .3s;
+}
+
+.tabstitle--1:hover {
+    background-color: #ec407a;
+    color: white;
+    transform: scale(1.05) translateY(-.5rem);
+}
+
+.tabstitle--1.active {
+    background-color: #ec407a;
+    color: white;
+    box-shadow: 0px 5px 10px #7e7c7c;
+}
+
+.tabstitle--2 {
+    padding: 10px 20px;
+    border-radius: 35px;
+    margin: 10px 5px 10px 5px;
+    transition: all .3s;
+}
+
+.tabstitle--2:hover {
+    background-color: #ec407a;
+    color: white;
+    transform: scale(1.05) translateY(-.5rem);
+}
+
+.tabstitle--2.active {
+    background-color: #ec407a;
+    color: white;
+    box-shadow: 0px 5px 10px #7e7c7c;
+}
+
+.tabstitle--3 {
+    padding: 10px 20px;
+    border-radius: 35px;
+    margin: 10px 5px 10px 5px;
+    transition: all .3s;
+}
+
+.tabstitle--3:hover {
+    background-color: #ec407a;
+    color: white;
+    transform: scale(1.05) translateY(-.5rem);
+}
+
+.tabstitle--3.active {
+    background-color: #ec407a;
+    color: white;
+    box-shadow: 0px 5px 10px #7e7c7c;
+}
+
+.tabs__sections__up {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tabs__sections__up--1 {    
+    background-image: url('../../assets/serrah-galos-bVMnhNOfFCo-unsplash.jpg');
+    background-size: cover;
+    border-radius: 5px;
+    height: 400px;
+    width: 500px;
+    margin: 20px 30px 50px 0px;
+}
+
+.tabs__sections__up--2 {
+    background-image: url('../../assets/serrah-galos-bVMnhNOfFCo-unsplash.jpg');
+    background-size: cover;
+    border-radius: 5px;
+    height: 400px;
+    width: 500px;
+    margin: 20px 0px 50px 77px;
+}
+
+.tabs__sections__down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/serrah-galos-bVMnhNOfFCo-unsplash.jpg');
+    background-size: cover;
+    border-radius: 5px;
+    height: 350px;
+    padding: 20px 60px 20px 60px;
+}
+
+.tabs__sections__up--1--button--left {
+    margin: 0px 150px 0px 150px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(255, 0, 0);
+  }
+  
+  .tabs__sections__up--1--button--right {
+    margin: 0px 150px 0px 150px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(0, 255, 242);
+  }
+
+  .tabs__sections__down--1--button {
+    margin: 0px 200px 0px 200px;
+    padding: 15px 40px 15px 40px;
+    border-radius: 30px;
+    background-color: rgb(255, 196, 0);
+  } 
+
+  /* @media (max-width: 320px) {
+    .home__down {
+      flex-direction: column;
+    }
+  
+    .tabs {
+      display: block;
+    }
+  
+    .tabs__sections__up--1>h4, .tabs__sections__up--2>h4, .tabs__sections__down>h4 {
+      display: none;
+    }
+    .tabs__sections__up--1,.tabs__sections__up--2 {
+      padding: 50px;
+    } 
+
+    .tabs__sections__up--1--button--left {
+        margin: 0px 80px 0px 80px;
+        padding: 10px;
+      }
+      
+      .tabs__sections__up--1--button--right {
+        margin: 0px 80px 0px 80px;
+        padding: 10px;
+      }
+  } */
+
+  @media (max-width: 600px) {
+    .home__down {
+      flex-direction: column;
+    }
+  
+    .tabs {
+      display: block;
+    }
+  
+    .tabs__sections__up--1>h4, .tabs__sections__up--2>h4, .tabs__sections__down>h4 {
+      display: none;
+    }
+    .tabs__sections__up--1,.tabs__sections__up--2 {
+      padding: 50px;
+    } 
+
+    .tabs__sections__up--1--button--left {
+        margin: 0px 0px 0px 0px;
+        padding: 10px;
+      }
+      
+      .tabs__sections__up--1--button--right {
+        margin: 0px 0px 0px 0px;
+        padding: 10px;
+      }
+  }
+
+
+  @media (max-width: 900px) {
+    .tabs__sections__up--1 { 
+        width: 300px;
+        margin: 20px 30px 50px 0px;
+    }
+    
+    .tabs__sections__up--2 {
+        width: 300px;
+        margin: 20px 0px 50px 50px;
+    }
+
+    .tabs__sections__up--1--button--left {
+        /* margin: 0px 80px 0px 80px; */
+        padding: 10px;
+      }
+      
+      .tabs__sections__up--1--button--right {
+        /* margin: 0px 80px 0px 80px; */
+        padding: 10px;
+      }
+  }
